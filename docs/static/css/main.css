@@ -1,0 +1,242 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Calamity';
+    font-weight: normal;
+    src: url("../font/Calamity-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Calamity';
+    font-weight: bold;
+    src: url("../font/Calamity-Bold.otf");
+}
+
+/* globals */
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Calamity', 'Roboto', 'Calibri', sans-serif;
+    overflow-x: hidden;
+}
+
+/*5ee7c1*/
+a {
+    color: #fe105b;
+}
+
+/* page wrapper */
+
+#wrapper {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+}
+
+.rupee {
+    position: absolute;
+    cursor: pointer;
+}
+
+.rupee-img {
+    height: 32px;
+    image-rendering: pixelated;
+}
+
+.mobile .rupee {
+    display: none;
+}
+
+/* header */
+
+header {
+    padding: 0 10% 10px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.mobile header {
+    padding: 0;
+    flex-flow: column;
+    background-color: #000;
+    overflow-y: hidden;
+    z-index: 4;
+}
+
+/* mobile nav toggle */
+
+#mobile-expand {
+    width: 64px; height: 64px;
+    position: absolute;
+    top: 0; left: 0;
+    display: none;
+    perspective: 48px;
+    cursor: pointer;
+}
+
+.mobile-expand-img {
+    height: 34px;
+    margin: 15px;
+    position: absolute;
+    top: 0; left: 0;
+    transition: transform 0.3s;
+}
+
+.mobile #mobile-expand-img-close {
+    transform: rotateX(-90deg) skewX(45deg);
+}
+
+.mobile #mobile-expand {
+    display: block;
+}
+
+.mobile .expanded #mobile-expand-img-open {
+    transform: rotateX(90deg) skewX(45deg);
+}
+
+.mobile .expanded #mobile-expand-img-close {
+    transform: none;
+}
+
+/* logo */
+
+#logo {
+    height: 64px;
+    margin-top: 8px;
+    margin-right: 24px;
+}
+
+#logo-img {
+    height: 100%;
+}
+
+.mobile #logo {
+    height: 48px;
+    margin-bottom: 8px;
+    margin-right: 0;
+}
+
+/* navbar */
+
+nav {
+    position: relative;
+    font-size: 0;
+    flex: 1;
+}
+
+.nav-elem {
+    padding: 24px 18px 23px;
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+    text-decoration: none;
+}
+
+.nav-elem-text {
+    font-size: 16pt;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.mobile nav {
+    width: 100%;
+}
+
+.mobile .nav-elem {
+    max-height: 0;
+    margin: 0 8%;
+    padding: 0;
+    display: block;
+    border-top: 0 solid rgba(255, 255, 255, 0.48);
+    border-bottom: none;
+    animation-timing-function: linear;
+    text-align: center;
+}
+
+.mobile.loaded .nav-elem {
+    transition: max-height 0.3s, padding 0.3s, border-top-width 0.3s;
+}
+
+.mobile .expanded .nav-elem {
+    max-height: 128px;
+    padding: 19px 0 20px;
+    border-top-width: 1px;
+}
+
+.mobile .nav-elem-text {
+    font-size: 14pt;
+}
+
+/* navbar highlight */
+
+#nav-highlight {
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    pointer-events: none;
+}
+
+.loaded #nav-highlight {
+    transition: width 0.3s, left 0.3s;
+}
+
+.mobile #nav-highlight {
+    display: none;
+}
+
+/* rupee counter */
+
+#rupee-counter {
+    margin-top: 8px;
+    font-size: 0;
+}
+
+#rupee-counter-icon, #rupee-counter-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#rupee-counter-icon {
+    height: 36px;
+}
+
+#rupee-counter-text {
+    font-size: 12pt;
+}
+
+.mobile #rupee-counter {
+    display: none;
+}
+
+/* main body */
+
+main {
+    display: none;
+    flex: 1;
+}
+
+/* footer */
+
+footer {
+    padding: 18px 10%;
+    display: flex;
+    flex-flow: row;
+    font-size: 10pt;
+}
+
+footer > div {
+    flex: 1;
+}
+
+#footer-right {
+    text-align: right;
+}

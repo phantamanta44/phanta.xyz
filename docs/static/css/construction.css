@@ -1,0 +1,13 @@
+#under-construction {
+    width: 100%;
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translateY(-50%);
+    font-size: 48pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mobile #under-construction {
+    font-size: 24pt;
+}

@@ -1,0 +1,41 @@
+header, body.mobile header, #center-box, footer {
+    background-color: rgba(0, 0, 0, 0.72);
+}
+
+.mobile header {
+    transition: background-color 0.3s;
+}
+
+.mobile header.expanded {
+    background-color: #000;
+}
+
+#full-page {
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: url('/static/img/logo_bg.png') center;
+    background-size: cover;
+    z-index: -4;
+}
+
+#center-box {
+    padding: 27px 45px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 420px;
+}
+
+#center-box h1 {
+    margin-bottom: 8px;
+}
+
+#center-box p {
+    margin-top: 8px;
+}
+
+.mobile #center-box {
+    width: 80%;
+    border-radius: 0;
+}
