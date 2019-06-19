@@ -47,25 +47,34 @@ window.addEventListener('load', () => {
   window.addEventListener('resize', resetNavHl);
 
   // mobile stylesheet application
-  const elemNavFirst = elemNav.firstElementChild;
-  const elemNavLast = elemNav.lastElementChild.previousElementSibling;
-  let resizeStyleTask = null;
+  const elemRupeeCountContainer = document.getElementById('rupee-counter');
+  let knownWidth = document.body.clientWidth;
+  const childWidthSum = (() => {
+    let k = 0;
+    let child = elemNav.firstElementChild;
+    while (child && child.classList.contains('nav-elem')) {
+      k += child.firstElementChild.getBoundingClientRect().width + 36;
+      child = child.nextElementSibling;
+    }
+    return k;
+  })();
 
   function resizeStyleHandler() {
-    document.body.classList.remove('mobile');
-    if (resizeStyleTask != null) window.clearTimeout(resizeStyleTask);
-    resizeStyleTask = window.setTimeout(() => {
-      if (elemNavFirst.offsetTop !== elemNavLast.offsetTop) {
+    const bodyWidth = document.body.clientWidth;
+    if (bodyWidth !== knownWidth) {
+      knownWidth = bodyWidth;
+      if (bodyWidth * 0.8 - 124 - elemRupeeCountContainer.getBoundingClientRect().width < childWidthSum) {
         document.body.classList.add('mobile');
         for (const callback of window.reactiveCallbacks) {
           callback(true);
         }
       } else {
+        document.body.classList.remove('mobile');
         for (const callback of window.reactiveCallbacks) {
           callback(false);
         }
       }
-    }, 1);
+    }
   }
 
   window.addEventListener('resize', resizeStyleHandler);
