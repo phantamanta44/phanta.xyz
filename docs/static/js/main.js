@@ -162,13 +162,13 @@ window.addEventListener('load', () => {
     document.fonts.ready.then(() => {
       resetNavHl();
       resizeStyleHandler();
-      document.body.classList.add('loaded');
+      window.setTimeout(() => document.body.classList.add('loaded'), 1);
     });
   } else {
     window.setTimeout(() => {
       resetNavHl();
       resizeStyleHandler();
-      document.body.classList.add('loaded')
+      window.setTimeout(() => document.body.classList.add('loaded'), 1);
     }, 50);
   }
 
