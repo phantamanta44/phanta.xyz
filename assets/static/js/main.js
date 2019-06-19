@@ -1,4 +1,5 @@
-window.onload = () => {
+window.reactiveCallbacks = [];
+window.addEventListener('load', () => {
 
   // sound
 
@@ -12,7 +13,6 @@ window.onload = () => {
 
   const elemWrapper = document.getElementById('wrapper');
   const elemMain = document.getElementsByTagName('main')[0];
-  const resizeHandlers = [];
 
   let rupeeCount = 0, displayedRupeeCount = 0;
   let rupeeUpdateTask = null;
@@ -44,7 +44,7 @@ window.onload = () => {
   for (const elem of document.getElementsByClassName('nav-elem')) {
     elem.onmouseenter = genNavHlMutator(elem);
   }
-  resizeHandlers.push(resetNavHl);
+  window.addEventListener('resize', resetNavHl);
 
   // mobile stylesheet application
   const elemNavFirst = elemNav.firstElementChild;
@@ -57,11 +57,18 @@ window.onload = () => {
     resizeStyleTask = window.setTimeout(() => {
       if (elemNavFirst.offsetTop !== elemNavLast.offsetTop) {
         document.body.classList.add('mobile');
+        for (const callback of window.reactiveCallbacks) {
+          callback(true);
+        }
+      } else {
+        for (const callback of window.reactiveCallbacks) {
+          callback(false);
+        }
       }
     }, 1);
   }
 
-  resizeHandlers.push(resizeStyleHandler);
+  window.addEventListener('resize', resizeStyleHandler);
 
   // mobile menu toggle
   const elemHeader = document.getElementsByTagName('header')[0];
@@ -125,8 +132,9 @@ window.onload = () => {
     }
   }
 
-  (rupeeGenBatch => {
-    console.log(2 * document.body.clientHeight / window.innerHeight);
+  window.setTimeout(() => (rupeeGenBatch => {
+    const headerOffset = 100 * elemHeader.clientHeight / document.body.clientHeight;
+    const remainingHeight = 100 - 2 * headerOffset;
     let left = Math.random() < 0.5;
     for (let i = 0; i < rupeeGenBatch; ++i) {
       (rupee => {
@@ -142,16 +150,13 @@ window.onload = () => {
           updateRupeeCount(rupee.value);
         };
         elemRupee.style.left = (left = !left) ? `${Math.random() * 8}%` : `${Math.random() * 8 + 92}%`;
-        elemRupee.style.top = `${Math.random() * 80 + 10}%`;
+        elemRupee.style.top = `${Math.random() * remainingHeight + headerOffset}%`;
         elemWrapper.appendChild(elemRupee);
       })(selectRupee());
     }
-  })(0.001 + Math.random() * 2 * document.body.clientHeight / window.innerHeight);
+  })(0.001 + Math.random() * 1.5 * document.body.clientHeight / window.innerHeight), 1);
 
   // init
-  window.onresize = () => {
-    for (const handler of resizeHandlers) handler();
-  };
   elemMain.style.display = 'block';
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(() => {
@@ -167,4 +172,4 @@ window.onload = () => {
     }, 50);
   }
 
-};
+});

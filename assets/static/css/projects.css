@@ -1,0 +1,154 @@
+main {
+    margin: 12px 10% 0;
+}
+
+.proj-category {
+    margin-top: 28px;
+    position: relative;
+}
+
+.proj-category:before {
+    width: 63%;
+    height: 0;
+    position: absolute;
+    top: -14px;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.48);
+    content: '';
+}
+
+.proj-category-title {
+    margin-bottom: 3px;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.proj-category-desc {
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+.proj-list {
+    margin-top: 6px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.proj-elem-wrapper {
+    width: 25%;
+    padding: 12px;
+}
+
+.mobile .proj-elem-wrapper {
+    width: 100%;
+}
+
+.proj-elem {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.48);
+    border-radius: 2%;
+}
+
+.proj-elem-icon {
+    width: 92%;
+    height: 92%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.proj-elem:hover .proj-elem-icon {
+    opacity: 1;
+}
+
+.proj-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.proj-elem-info {
+    padding: 6px 10px;
+    position: absolute;
+    bottom: -3.5%;
+    right: -3.5%;
+    display: inline-block;
+    background-color: #000;
+    border: 2px solid rgba(255, 255, 255, 0.48);
+    border-radius: 2%;
+}
+
+.mobile .proj-elem-info {
+    max-width: 90%;
+}
+
+.proj-name {
+    display: inline-block;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+.proj-info-extended {
+    position: relative;
+    transition: width 0.3s, height 0.3s;
+    overflow: hidden;
+}
+
+.proj-info-extended-content {
+    width: max-content;
+    position: absolute;
+}
+
+.mobile .proj-info-extended-content {
+    width: unset;
+    position: relative;
+}
+
+.proj-desc {
+    position: relative;
+    margin-top: 4px;
+    font-size: 11pt;
+    font-weight: normal;
+}
+
+.proj-icons {
+    margin-top: 8px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.proj-icons-langs {
+    margin-right: 16px;
+}
+
+.proj-lang, .proj-link {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.proj-lang {
+    background-color: #212121;
+    border-radius: 50%;
+}
+
+.proj-link {
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+.proj-link:hover {
+    opacity: 1;
+}
+
+.proj-link-icon {
+    width: 100%;
+    height: 100%;
+}

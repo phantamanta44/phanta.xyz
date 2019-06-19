@@ -20,7 +20,7 @@ header, body.mobile header, #center-box, footer {
 }
 
 #center-box {
-    padding: 27px 45px;
+    padding: 27px 60px;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -29,10 +29,14 @@ header, body.mobile header, #center-box, footer {
 
 #center-box h1 {
     margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 24pt;
 }
 
 #center-box p {
     margin-top: 8px;
+    font-weight: normal;
+    font-size: 12pt;
 }
 
 .mobile #center-box {

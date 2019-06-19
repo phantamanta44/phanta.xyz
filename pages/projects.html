@@ -1,3 +1,73 @@
-<?+ wip.html ?>
+<?+ parent.html ?>
 
 <?: title ?>projects<?/?>
+
+<?: styles ?>
+<link rel="stylesheet" href="/static/css/projects.css" type="text/css">
+<?/?>
+
+<?: content ?>
+<h1>Projects</h1>
+<?d langIcons = lang_icons.json ?>
+    <?d categories = projects.json ?>
+        <?{ _, category <- categories ?>
+            <div class="proj-category">
+                <div class="proj-category-header">
+                    <div class="proj-category-title"><?= category.title ?></div>
+                    <div class="proj-category-desc"><?= category.desc ?></div>
+                </div>
+                <div class="proj-list">
+                    <?{ _, project <- category.projects ?>
+                        <div class="proj-elem-wrapper">
+                            <div class="proj-elem">
+                                <div class="proj-elem-icon">
+                                    <?| project.icon ?>
+                                        <img class="proj-icon" src="<?= project.icon ?>"/>
+                                    <?,?>
+                                    <img class="proj-icon" src="/static/img/icon/package.png"/>
+                                    <?/?>
+                                </div>
+                                <div class="proj-elem-info">
+                                    <div class="proj-name"><?= project.name ?></div>
+                                    <div class="proj-info-extended collapse">
+                                        <div class="proj-info-extended-content">
+                                            <div class="proj-desc"><?= project.desc ?></div>
+                                            <div class="proj-icons">
+                                                <div class="proj-icons-langs">
+                                                    <?| project.lang instanceof String ?>
+                                                        <img class="proj-lang" src="<?= langIcons{project.lang} ?>"/>
+                                                    <?,?>
+                                                        <?[ lang <- project.lang ?>
+                                                            <img class="proj-lang" src="<?= langIcons{lang} ?>"/>
+                                                        <?/?>
+                                                    <?/?>
+                                                </div>
+                                                <div class="proj-icons-links">
+                                                    <?| project.link ?>
+                                                        <a class="proj-link" href="<?= project.link ?>" target="_blank" rel="noopener">
+                                                            <img class="proj-link-icon" src="/static/img/icon/link.png"/>
+                                                        </a>
+                                                    <?/?>
+                                                    <?| project.source ?>
+                                                        <a class="proj-link" href="<?= project.source ?>" target="_blank" rel="noopener">
+                                                            <img class="proj-link-icon" src="/static/img/icon/github.png"/>
+                                                        </a>
+                                                    <?/?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?/?>
+                </div>
+            </div>
+        <?/?>
+    <?/?>
+<?/?>
+<?/?>
+
+<?: scripts ?>
+<script type="application/javascript" src="/static/js/collapse.js"></script>
+<?/?>

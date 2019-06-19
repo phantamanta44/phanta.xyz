@@ -1,0 +1,341 @@
+{
+  "robotics": {
+    "title": "Robotics",
+    "desc": "Control systems and machine automation.",
+    "projects": {
+      "combinatory_processing": {
+        "name": "Cbtry. Processing",
+        "desc": "Functional abstraction over ROS for combinatory logic.",
+        "lang": "python",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/combinatory_processing"
+      },
+      "combinatory_input": {
+        "name": "Combinatory Input",
+        "desc": "Provides combinatory processing data sources for joydev bindings.",
+        "lang": "python",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/combinatory_input"
+      },
+      "roboed": {
+        "name": "RoboED",
+        "desc": "Functional robot programming framework for FRC.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/icrobotics-team167/RoboED"
+      }
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "desc": "Programming language parsing and metaprogramming.",
+    "projects": {
+      "wird": {
+        "name": "Wird",
+        "desc": "Recursive descent syntax tree parser.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/wird"
+      },
+      "resyn": {
+        "name": "ReSyN",
+        "desc": "Rudimentary regex-based syntax tree parser.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/regularsyntax/ReSyN"
+      },
+      "luscript": {
+        "name": "LuScript",
+        "desc": "Lisp-y programming language implemented using ReSyN.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/LuScriptJ"
+      }
+    }
+  },
+  "frameworks": {
+    "title": "Frameworks",
+    "desc": "Programs that drive other programs.",
+    "projects": {
+      "sor": {
+        "name": "SOR",
+        "desc": "Distributed publisher-subscriber async model.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/sor"
+      },
+      "aqueduct": {
+        "name": "Aqueduct",
+        "desc": "Dataflow-oriented programming.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/Aqueduct"
+      }
+    }
+  },
+  "web": {
+    "title": "Websites",
+    "desc": "Both clientside and serverside web tech.",
+    "projects": {
+      "site": {
+        "name": "phanta.xyz",
+        "desc": "Personal website.",
+        "icon": "https://avatars2.githubusercontent.com/u/5924141?s=256&v=4",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://phanta.xyz",
+        "source": "https://github.com/phantamanta44/phanta.xyz"
+      },
+      "site167": {
+        "name": "iowacityrobotics.org",
+        "desc": "Website for Iowa City Robotics.",
+        "icon": "https://avatars1.githubusercontent.com/u/5957196?s=256&v=4",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://iowacityrobotics.org",
+        "source": "https://github.com/icrobotics-team167/site3"
+      },
+      "mysticmess": {
+        "name": "MysticMess",
+        "desc": "Mystic Messenger chatroom simulator.",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "https://rfassoc.github.io/MysticMess",
+        "source": "https://github.com/rfassoc/MysticMess"
+      },
+      "libseven": {
+        "name": "libseven",
+        "desc": "Web application for creating and sharing MysticMess chatrooms.",
+        "icon": "https://rawcdn.githack.com/rfassoc/libseven/c8d5e852da98a195af9115f952e0bbc3bcad1e9b/static/img/logo/logo-opaque.png",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://lib7.phanta.xyz",
+        "source": "https://github.com/rfassoc/libseven"
+      },
+      "wpd": {
+        "name": "Watch Paint Dry",
+        "desc": "Simple static site generator.",
+        "lang": "kotlin",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/watch-paint-dry"
+      },
+      "floof": {
+        "name": "Floof",
+        "desc": "Web application framework for Node.",
+        "icon": "https://avatars3.githubusercontent.com/u/34104464?s=256&v=4",
+        "lang": "js",
+        "license": "mit",
+        "link": "https://www.npmjs.com/package/floof"
+      },
+      "ksort": {
+        "name": "Funky Lil Sorter",
+        "desc": "Manual-comparison heap sort web app.",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "link": "http://fls.phanta.xyz/",
+        "source": "https://github.com/phantamanta44/ksort"
+      },
+      "effareseetoo": {
+        "name": "EffAreSeeToo",
+        "desc": "It's what Dean would have wanted.",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://frc.phanta.xyz",
+        "source": "https://github.com/phantamanta44/effareseetoo"
+      }
+    }
+  },
+  "school": {
+    "title": "Education",
+    "desc": "Scholarly pursuits.",
+    "projects": {
+      "texdown": {
+        "name": "TeXDown",
+        "desc": "Markdown renderer with KaTeX math support.",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://texdown.phanta.xyz/",
+        "source": "https://github.com/phantamanta44/TeXDown"
+      },
+      "jstimeline": {
+        "name": "JSTimeline",
+        "desc": "Web application for visualizing a timeline.",
+        "lang": [
+          "html",
+          "css",
+          "js"
+        ],
+        "license": "mit",
+        "link": "http://time.phanta.xyz",
+        "source": "https://github.com/phantamanta44/jstimeline"
+      }
+    }
+  },
+  "game": {
+    "title": "Game",
+    "desc": "Interactive gizmos.",
+    "projects": {
+      "koboi": {
+        "name": "Koboi",
+        "desc": "Gameboy and GBC emulator.",
+        "lang": "kotlin",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/koboi"
+      },
+      "shlgl": {
+        "name": "SHLGL",
+        "desc": "2D game development framework.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/SHLGL"
+      }
+    }
+  },
+  "minecraft": {
+    "title": "Minecraft",
+    "desc": "Cubes and whatnot.",
+    "projects": {
+      "libnine": {
+        "name": "libnine",
+        "desc": "Minecraft modding library.",
+        "icon": "https://media.forgecdn.net/avatars/204/573/636941032067206129.png",
+        "lang": "kotlin",
+        "license": "mit",
+        "link": "https://minecraft.curseforge.com/projects/libnine",
+        "source": "https://github.com/phantamanta44/libnine"
+      },
+      "mekores": {
+        "name": "Mekanism Ores",
+        "desc": "Mekanism addon for ore processing compatibility.",
+        "icon": "https://media.forgecdn.net/avatars/189/241/636849372943129177.png",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://minecraft.curseforge.com/projects/mekanismores",
+        "source": "https://github.com/phantamanta44/MekanismOres"
+      },
+      "tinkersmemes": {
+        "name": "Tinkers' MEMES",
+        "desc": "Tinkers' Construct addon for energized weapons.",
+        "icon": "https://media.forgecdn.net/avatars/204/574/636941036645893421.png",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://minecraft.curseforge.com/projects/tinkers-memes",
+        "source": "https://github.com/phantamanta44/Tinkers-MEMES"
+      },
+      "lazyae2": {
+        "name": "Lazy AE2",
+        "desc": "Applied Energistics addon for easier automation.",
+        "icon": "https://media.forgecdn.net/avatars/204/657/636941758157711487.png",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://minecraft.curseforge.com/projects/lazy-ae2",
+        "source": "https://github.com/phantamanta44/Lazy-AE2"
+      },
+      "xbow": {
+        "name": "Project Crossbow",
+        "desc": "Minecraft laser simulation mod.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/ProjectCrossbow"
+      },
+      "rphud": {
+        "name": "RPHud",
+        "desc": "Allows modification of Minecraft HUD using a simple scripting language.",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://minecraft.curseforge.com/projects/resource-pack-hud",
+        "source": "https://github.com/phantamanta44/rphud"
+      },
+      "finalvoyage": {
+        "name": "A Final Voyage",
+        "desc": "A modpack and associated mod focused on nether exploration.",
+        "icon": "https://i.imgur.com/LFNgaYQ.png",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://www.technicpack.net/modpack/a-final-voyage.1048306",
+        "source": "https://github.com/phantamanta44/finalvoyage"
+      },
+      "warptastix": {
+        "name": "Warptastix",
+        "desc": "A teleportation plugin for Bukkit.",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://dev.bukkit.org/projects/warptastix",
+        "source": "https://github.com/phantamanta44/Warptastix"
+      },
+      "mcrail": {
+        "name": "Minecraft Rail",
+        "desc": "Serverside modding framework built on Bukkit.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/MinecraftRail/MCRail"
+      }
+    }
+  },
+  "other": {
+    "title": "Other",
+    "desc": "Miscellaneous experiments.",
+    "projects": {
+      "thoth": {
+        "name": "Thoth",
+        "desc": "Android file sync tool.",
+        "lang": "kotlin",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/thoth"
+      },
+      "sonarous": {
+        "name": "Sonarous",
+        "desc": "Rudimentary Discord music bot.",
+        "icon": "https://i.imgur.com/0DuOVvR.png",
+        "lang": "java",
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/Sonarous"
+      },
+      "syne": {
+        "name": "Syne",
+        "desc": "Experimental audio waveform animation using web audio.",
+        "lang": [
+          "html",
+          "js"
+        ],
+        "license": "gpl2",
+        "link": "http://phanta.xyz/Syne",
+        "source": "https://github.com/phantamanta44/Syne"
+      },
+      "pysyne": {
+        "name": "PySyne",
+        "desc": "Generates waveform animations for audio clips.",
+        "lang": "python",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/PySyne"
+      }
+    }
+  }
+}
