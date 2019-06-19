@@ -74,6 +74,7 @@ main {
 }
 
 .proj-elem-info {
+    max-width: calc(90% + 20px);
     padding: 6px 10px;
     position: absolute;
     bottom: -3.5%;
@@ -89,9 +90,13 @@ main {
 }
 
 .proj-name {
+    max-width: 100%;
     display: inline-block;
     font-size: 16pt;
     font-weight: bold;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .proj-info-extended {
