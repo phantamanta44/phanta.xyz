@@ -48,7 +48,7 @@ window.addEventListener('load', () => {
 
   // mobile stylesheet application
   const elemRupeeCountContainer = document.getElementById('rupee-counter');
-  let knownWidth = document.body.clientWidth;
+  let knownWidth = -1;
   const childWidthSum = (() => {
     let k = 0;
     let child = elemNav.firstElementChild;
