@@ -240,6 +240,15 @@
         "link": "https://minecraft.curseforge.com/projects/mekanismores",
         "source": "https://github.com/phantamanta44/MekanismOres"
       },
+      "algane": {
+        "name": "ALGANE",
+        "desc": "Mekanism addon for laser guns et al.",
+        "icon": "https://media.forgecdn.net/avatars/216/751/637003833949363280.png",
+        "lang": "java",
+        "license": "json",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/algane",
+        "source": "https://github.com/phantamanta44/algane"
+      },
       "tinkersmemes": {
         "name": "Tinkers' MEMES",
         "desc": "Tinkers' Construct addon for energized weapons.",
@@ -272,6 +281,13 @@
         "license": "mit",
         "link": "https://minecraft.curseforge.com/projects/resource-pack-hud",
         "source": "https://github.com/phantamanta44/rphud"
+      },
+      "curse-modpack-tool": {
+        "name": "Curse Modpack Tool",
+        "desc": "A CLI tool for building CurseForge modpacks.",
+        "lang": "kotlin",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/curse-modpack-tool/blob/master/LICENSE.md"
       },
       "finalvoyage": {
         "name": "A Final Voyage",
