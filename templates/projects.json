@@ -3,12 +3,20 @@
     "title": "Robotics",
     "desc": "Control systems and machine automation.",
     "projects": {
-      "combinatory_processing": {
-        "name": "Cbtry. Processing",
-        "desc": "Functional abstraction over ROS for combinatory logic.",
-        "lang": "python",
-        "license": "mit",
-        "source": "https://github.com/phantamanta44/combinatory_processing"
+      "wiscrobotics": {
+        "name": "Wisconsin Robotics",
+        "desc": "A student organization at UW-Madison that builds Mars rovers to compete in the University Rover Competition.",
+        "icon": "https://avatars.githubusercontent.com/u/12723622?s=256&v=4",
+        "lang": ["python", "cpp"],
+        "link": "http://www.wisconsinrobotics.org/",
+        "source": "https://github.com/WisconsinRobotics"
+      },
+      "rosjay": {
+        "name": "RosJay",
+        "desc": "A ROS client library written in pure Java.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/RosJay"
       },
       "combinatory_input": {
         "name": "Combinatory Input",
@@ -17,9 +25,22 @@
         "license": "mit",
         "source": "https://github.com/phantamanta44/combinatory_input"
       },
+      "combinatory_processing": {
+        "name": "Cbtry. Processing",
+        "desc": "Functional abstraction over ROS nodes expressible using only combinatory logic.",
+        "lang": "python",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/combinatory_processing"
+      },
+      "roswell": {
+        "name": "Roswell",
+        "desc": "A wrapper around the ROS Python API that eliminates some boilerplate for very simple nodes.",
+        "lang": "python",
+        "source": "https://github.com/phantamanta44/roswell"
+      },
       "roboed": {
         "name": "RoboED",
-        "desc": "Functional robot programming framework for FRC.",
+        "desc": "Robot programming framework for FRC based on composable data pipelines.",
         "lang": "java",
         "license": "mit",
         "source": "https://github.com/icrobotics-team167/RoboED"
@@ -28,14 +49,21 @@
   },
   "languages": {
     "title": "Languages",
-    "desc": "Programming language parsing and metaprogramming.",
+    "desc": "Programming languages, parsers, and stuff.",
     "projects": {
       "wird": {
         "name": "Wird",
-        "desc": "Recursive descent syntax tree parser.",
+        "desc": "Very inefficient backtracking syntax tree parser.",
         "lang": "java",
         "license": "json",
         "source": "https://github.com/phantamanta44/wird"
+      },
+      "luscript": {
+        "name": "LuScript",
+        "desc": "Simple lisp-style programming language implemented using ReSyN.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/LuScriptJ"
       },
       "resyn": {
         "name": "ReSyN",
@@ -43,13 +71,6 @@
         "lang": "java",
         "license": "mit",
         "source": "https://github.com/regularsyntax/ReSyN"
-      },
-      "luscript": {
-        "name": "LuScript",
-        "desc": "Lisp-y programming language implemented using ReSyN.",
-        "lang": "java",
-        "license": "mit",
-        "source": "https://github.com/phantamanta44/LuScriptJ"
       }
     }
   },
@@ -59,142 +80,124 @@
     "projects": {
       "sor": {
         "name": "SOR",
-        "desc": "Distributed publisher-subscriber async model.",
+        "desc": "Framework for distributed networks of nodes with a publisher-subscriber communication model.",
         "lang": "java",
         "license": "json",
         "source": "https://github.com/phantamanta44/sor"
       },
       "aqueduct": {
         "name": "Aqueduct",
-        "desc": "Dataflow-oriented programming.",
+        "desc": "Framework for dataflow programming.",
         "lang": "java",
         "license": "json",
         "source": "https://github.com/phantamanta44/Aqueduct"
+      },
+      "commands4a": {
+        "name": "Commands4A",
+        "desc": "Annotation-based command parsing and execution framework. Originally built for Discord4J-powered Discord bots.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/commands4a"
+      },
+      "jsr305": {
+        "name": "JSR-305",
+        "desc": "Augments JSR-305 with one additional package-level annotation that marks everything as non-null by default.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/jsr305"
       }
     }
   },
   "web": {
-    "title": "Websites",
-    "desc": "Both clientside and serverside web tech.",
+    "title": "Web Tech",
+    "desc": "Things that you can put in your browser.",
     "projects": {
+      "rsdirect": {
+        "name": "rsdirect",
+        "desc": "A tiny webserver for serving redirects based on the host from which the server was reached.",
+        "lang": "rust",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/rsdirect"
+      },
+      "ksort": {
+        "name": "Funky Lil Sorter",
+        "desc": "Web app that lets users sort things manually via heap-sort.",
+        "lang": ["html", "css", "js"],
+        "link": "http://fls.phanta.xyz/",
+        "source": "https://github.com/phantamanta44/ksort"
+      },
       "site": {
         "name": "phanta.xyz",
-        "desc": "Personal website.",
+        "desc": "My personal website. You're looking at it right now!",
         "icon": "https://avatars2.githubusercontent.com/u/5924141?s=256&v=4",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
+        "lang": ["html", "css", "js"],
         "license": "mit",
         "link": "http://phanta.xyz",
         "source": "https://github.com/phantamanta44/phanta.xyz"
       },
-      "site167": {
-        "name": "iowacityrobotics.org",
-        "desc": "Website for Iowa City Robotics.",
-        "icon": "https://avatars1.githubusercontent.com/u/5957196?s=256&v=4",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
-        "license": "mit",
-        "link": "http://iowacityrobotics.org",
-        "source": "https://github.com/icrobotics-team167/site3"
-      },
-      "mysticmess": {
-        "name": "MysticMess",
-        "desc": "Mystic Messenger chatroom simulator.",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
-        "license": "mit",
-        "link": "https://rfassoc.github.io/MysticMess",
-        "source": "https://github.com/rfassoc/MysticMess"
-      },
-      "libseven": {
-        "name": "libseven",
-        "desc": "Web application for creating and sharing MysticMess chatrooms.",
-        "icon": "https://rawcdn.githack.com/rfassoc/libseven/c8d5e852da98a195af9115f952e0bbc3bcad1e9b/static/img/logo/logo-opaque.png",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
-        "license": "mit",
-        "link": "http://lib7.phanta.xyz",
-        "source": "https://github.com/rfassoc/libseven"
-      },
       "wpd": {
         "name": "Watch Paint Dry",
-        "desc": "Simple static site generator.",
+        "desc": "Static site generator and template engine. This website was built using WPD!",
         "lang": "kotlin",
         "license": "json",
         "source": "https://github.com/phantamanta44/watch-paint-dry"
       },
+      "libseven": {
+        "name": "libseven",
+        "desc": "Platform for creating and sharing fan-made chatrooms for the mobile game Mystic Messenger.",
+        "icon": "https://rawcdn.githack.com/rfassoc/libseven/c8d5e852da98a195af9115f952e0bbc3bcad1e9b/static/img/logo/logo-opaque.png",
+        "lang": ["html", "css", "js"],
+        "license": "mit",
+        "link": "http://lib7.phanta.xyz",
+        "source": "https://github.com/rfassoc/libseven"
+      },
       "floof": {
         "name": "Floof",
-        "desc": "Web application framework for Node.",
+        "desc": "Small web application framework for Node.js.",
         "icon": "https://avatars3.githubusercontent.com/u/34104464?s=256&v=4",
         "lang": "js",
         "license": "mit",
-        "link": "https://www.npmjs.com/package/floof"
+        "link": "https://www.npmjs.com/package/floof",
+        "source": "https://github.com/floofjs"
       },
-      "ksort": {
-        "name": "Funky Lil Sorter",
-        "desc": "Manual-comparison heap sort web app.",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
-        "link": "http://fls.phanta.xyz/",
-        "source": "https://github.com/phantamanta44/ksort"
-      },
-      "effareseetoo": {
-        "name": "EffAreSeeToo",
-        "desc": "It's what Dean would have wanted.",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
+      "andesitejs": {
+        "name": "Andesite.js",
+        "desc": "A preliminary attempt at building a clientside MVVM framework. Never completed.",
+        "lang": "js",
         "license": "mit",
-        "link": "http://frc.phanta.xyz",
-        "source": "https://github.com/phantamanta44/effareseetoo"
-      }
-    }
-  },
-  "school": {
-    "title": "Education",
-    "desc": "Scholarly pursuits.",
-    "projects": {
+        "source": "https://github.com/phantamanta44/andesite.js"
+      },
+      "site167": {
+        "name": "iowacityrobotics.org",
+        "desc": "Website for the Iowa City Robotics FRC team.",
+        "icon": "https://avatars1.githubusercontent.com/u/5957196?s=256&v=4",
+        "lang": ["html", "css", "js"],
+        "license": "mit",
+        "link": "http://iowacityrobotics.org",
+        "source": "https://github.com/icrobotics-team167/site3"
+      },
       "texdown": {
         "name": "TeXDown",
-        "desc": "Markdown renderer with KaTeX math support.",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
+        "desc": "In-browser markdown renderer with support for embedding LaTeX-style math.",
+        "lang": ["html", "css", "js"],
         "license": "mit",
         "link": "http://texdown.phanta.xyz/",
         "source": "https://github.com/phantamanta44/TeXDown"
       },
-      "jstimeline": {
-        "name": "JSTimeline",
-        "desc": "Web application for visualizing a timeline.",
-        "lang": [
-          "html",
-          "css",
-          "js"
-        ],
-        "license": "mit",
-        "link": "http://time.phanta.xyz",
-        "source": "https://github.com/phantamanta44/jstimeline"
+      "vybemachine": {
+        "name": "Vybe Machine",
+        "desc": "A (now defunct) web app for streaming randomly-selected music from Soundcloud.",
+        "lang": ["html", "css", "js"],
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/vybemachine"
+      },
+      "chillingsmite": {
+        "name": "Chilling Smite",
+        "desc": "A (now defunct) web app for looking up League of Legends match data.",
+        "icon": "https://i.imgur.com/KW5Dacb.png",
+        "lang": ["html", "css", "js"],
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/ChillingSmite"
       }
     }
   },
@@ -211,10 +214,17 @@
       },
       "shlgl": {
         "name": "SHLGL",
-        "desc": "2D game development framework.",
+        "desc": "A wrapper around LWJGL for developing 2D games.",
         "lang": "java",
         "license": "mit",
         "source": "https://github.com/phantamanta44/SHLGL"
+      },
+      "openaargon": {
+        "name": "OpenAargon",
+        "desc": "A reimplementation of the puzzle game Aargon Deluxe in LWJGL.",
+        "lang": "java",
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/OpenAargon"
       }
     }
   },
@@ -222,72 +232,129 @@
     "title": "Minecraft",
     "desc": "Cubes and whatnot.",
     "projects": {
-      "libnine": {
-        "name": "libnine",
-        "desc": "Minecraft modding library.",
-        "icon": "https://media.forgecdn.net/avatars/204/573/636941032067206129.png",
-        "lang": "kotlin",
-        "license": "mit",
-        "link": "https://minecraft.curseforge.com/projects/libnine",
-        "source": "https://github.com/phantamanta44/libnine"
-      },
-      "mekores": {
-        "name": "Mekanism Ores",
-        "desc": "Mekanism addon for ore processing compatibility.",
-        "icon": "https://media.forgecdn.net/avatars/189/241/636849372943129177.png",
+      "fluid-drawers": {
+        "name": "Fluid Drawers",
+        "desc": "An addon mod for Storage Drawers that implements drawers capable of storing fluids.",
+        "icon": "https://media.forgecdn.net/avatars/293/728/637330435491993335.png",
         "lang": "java",
-        "license": "mit",
-        "link": "https://minecraft.curseforge.com/projects/mekanismores",
-        "source": "https://github.com/phantamanta44/MekanismOres"
+        "license": "json",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/fluid-drawers",
+        "source": "https://github.com/phantamanta44/fluid-drawers"
+      },
+      "ae2fc": {
+        "name": "AE2 Fluid Crafting",
+        "desc": "An addon mod for Applied Energistics 2 that allows for autocrafting with fluid ingredients.",
+        "icon": "https://media.forgecdn.net/avatars/276/640/637266832013509313.png",
+        "lang": "java",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/ae2-fluid-crafting",
+        "source": "https://github.com/phantamanta44/ae2-fluid-crafting"
+      },
+      "tconevo": {
+        "name": "Tinkers' Evolution",
+        "desc": "An addon mod for Tinkers' Construct that offers deep integration for various materials from other mods.",
+        "icon": "https://media.forgecdn.net/avatars/273/618/637255642042590715.png",
+        "lang": "java",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/tinkers-evolution",
+        "source": "https://github.com/phantamanta44/tinkers-evolution"
+      },
+      "psi-reagent-prototype": {
+        "name": "PSI Reagent Prototype",
+        "desc": "An addon for the PSI mod that implements spell reagents as originally intended by Vazkii. Never completed.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/psi-reagent-prototype"
+      },
+      "filing-cabinets": {
+        "name": "Filing Cabinets Refurbished",
+        "desc": "A port of the filing cabinet feature from the original Extra Utilities mod.",
+        "icon": "https://media.forgecdn.net/avatars/241/510/637128397317529755.png",
+        "lang": "java",
+        "license": "json",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/filing-cabinets-refurbished",
+        "source": "https://github.com/phantamanta44/filing-cabinets"
+      },
+      "psi-costs": {
+        "name": "Psio",
+        "desc": "An addon mod for PSI that adds an energy cost to spellcasting.",
+        "icon": "https://media.forgecdn.net/avatars/223/208/637028185320847649.png",
+        "lang": "java",
+        "license": "json",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/psio",
+        "source": "https://github.com/phantamanta44/psi-costs"
+      },
+      "curse-modpack-tool": {
+        "name": "Curse Modpack Tool",
+        "desc": "A command-line tool for building CurseForge modpacks.",
+        "lang": "kotlin",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/curse-modpack-tool/blob/master/LICENSE.md"
+      },
+      "unclunkify": {
+        "name": "Unclunkify",
+        "desc": "A mod that tweaks Minecraft's block breaking speeds to make the early game feel better.",
+        "icon": "https://media.forgecdn.net/avatars/219/618/637016671892251538.png",
+        "lang": "java",
+        "license": "json",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/unclunkify",
+        "source": "https://github.com/phantamanta44/unclunkify"
       },
       "algane": {
         "name": "ALGANE",
-        "desc": "Mekanism addon for laser guns et al.",
+        "desc": "Mekanism addon with fancy laser guns.",
         "icon": "https://media.forgecdn.net/avatars/216/751/637003833949363280.png",
         "lang": "java",
         "license": "json",
         "link": "https://www.curseforge.com/minecraft/mc-mods/algane",
         "source": "https://github.com/phantamanta44/algane"
       },
+      "aquinasmc": {
+        "name": "Aquinas MC",
+        "desc": "A Minecraft mod that reimplements some features from the first Deus Ex game. Never completed.",
+        "lang": "java",
+        "license": "json",
+        "source": "https://github.com/phantamanta44/aquinasmc"
+      },
       "tinkersmemes": {
         "name": "Tinkers' MEMES",
-        "desc": "Tinkers' Construct addon for energized weapons.",
+        "desc": "Tinkers' Construct addon with an energized tool modifier.",
         "icon": "https://media.forgecdn.net/avatars/204/574/636941036645893421.png",
         "lang": "java",
         "license": "mit",
-        "link": "https://minecraft.curseforge.com/projects/tinkers-memes",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/tinkers-memes",
         "source": "https://github.com/phantamanta44/Tinkers-MEMES"
       },
       "lazyae2": {
         "name": "Lazy AE2",
-        "desc": "Applied Energistics addon for easier automation.",
+        "desc": "Applied Energistics addon with easier crafting and automation tools.",
         "icon": "https://media.forgecdn.net/avatars/204/657/636941758157711487.png",
         "lang": "java",
         "license": "mit",
-        "link": "https://minecraft.curseforge.com/projects/lazy-ae2",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/lazy-ae2",
         "source": "https://github.com/phantamanta44/Lazy-AE2"
       },
-      "xbow": {
-        "name": "Project Crossbow",
-        "desc": "Minecraft laser simulation mod.",
-        "lang": "java",
-        "license": "mit",
-        "source": "https://github.com/phantamanta44/ProjectCrossbow"
-      },
-      "rphud": {
-        "name": "RPHud",
-        "desc": "Allows modification of Minecraft HUD using a simple scripting language.",
-        "lang": "java",
-        "license": "mit",
-        "link": "https://minecraft.curseforge.com/projects/resource-pack-hud",
-        "source": "https://github.com/phantamanta44/rphud"
-      },
-      "curse-modpack-tool": {
-        "name": "Curse Modpack Tool",
-        "desc": "A CLI tool for building CurseForge modpacks.",
+      "libnine": {
+        "name": "libnine",
+        "desc": "A Minecraft modding library that takes the boilerplate out of Forge.",
+        "icon": "https://media.forgecdn.net/avatars/204/573/636941032067206129.png",
         "lang": "kotlin",
-        "license": "json",
-        "source": "https://github.com/phantamanta44/curse-modpack-tool/blob/master/LICENSE.md"
+        "license": "mit",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/libnine",
+        "source": "https://github.com/phantamanta44/libnine"
+      },
+      "wtflux": {
+        "name": "What The Flux",
+        "desc": "A Minecraft mod with various simple power generation machines.",
+        "lang": "java",
+        "license": "gpl2",
+        "link": "https://mods.io/mods/1267-whattheflux",
+        "source": "https://github.com/phantamanta44/WhatTheFlux"
+      },
+      "epoxy": {
+        "name": "Epoxy",
+        "desc": "A reimplementation of the Technic Platform's Solder API in Node.js.",
+        "lang": "js",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/epoxy"
       },
       "finalvoyage": {
         "name": "A Final Voyage",
@@ -298,20 +365,125 @@
         "link": "https://www.technicpack.net/modpack/a-final-voyage.1048306",
         "source": "https://github.com/phantamanta44/finalvoyage"
       },
+      "xbow": {
+        "name": "Project Crossbow",
+        "desc": "A Minecraft laser simulation mod. Never completed.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/ProjectCrossbow"
+      },
+      "mekores": {
+        "name": "Mekanism Ores",
+        "desc": "Mekanism addon for ore processing compatibility.",
+        "icon": "https://media.forgecdn.net/avatars/189/241/636849372943129177.png",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://www.curseforge.com/minecraft/mc-mods/mekanismores",
+        "source": "https://github.com/phantamanta44/MekanismOres"
+      },
+      "mcrail": {
+        "name": "Minecraft Rail",
+        "desc": "A serverside modding framework that allows for complex custom behaviour without client mods. Never completed.",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/MinecraftRail/MCRail"
+      },
+      "mobafort": {
+        "name": "MOBAFort",
+        "desc": "A series of server plugins implementing a MOBA-like game in Minecraft. Never completed.",
+        "lang": "java",
+        "license": "gpl3",
+        "source": "https://github.com/phantamanta44/mf-game"
+      },
       "warptastix": {
         "name": "Warptastix",
         "desc": "A teleportation plugin for Bukkit.",
         "lang": "java",
         "license": "mit",
-        "link": "https://dev.bukkit.org/projects/warptastix",
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/warptastix",
         "source": "https://github.com/phantamanta44/Warptastix"
       },
-      "mcrail": {
-        "name": "Minecraft Rail",
-        "desc": "Serverside modding framework built on Bukkit.",
+      "rphud": {
+        "name": "RPHud",
+        "desc": "A Minecraft mod that allows for the creation of custom HUDs via a simple scripting language.",
         "lang": "java",
         "license": "mit",
-        "source": "https://github.com/MinecraftRail/MCRail"
+        "link": "https://www.curseforge.com/minecraft/mc-mods/resource-pack-hud",
+        "source": "https://github.com/phantamanta44/rphud"
+      },
+      "ralogin": {
+        "name": "RA Login",
+        "desc": "A Bukkit plugin that awards loyalty points for logging into a Minecraft server. Built for a now-defunct server community.",
+        "lang": "java",
+        "license": "mit",
+        "link": "https://www.curseforge.com/minecraft/bukkit-plugins/ralogin",
+        "source": "https://github.com/phantamanta44/RALogin"
+      },
+      "war3": {
+        "name": "MC-War Client Mod",
+        "desc": "A client mod for the (now defunct) MC-War Minecraft server.",
+        "lang": "java",
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/war3"
+      }
+    }
+  },
+  "discord": {
+    "title": "Discord Bots",
+    "desc": "The machine overlords of the chatroom.",
+    "projects": {
+      "codearena": {
+        "name": "CodeArena",
+        "desc": "A Discord bot that hosts code challenges, in which users compete to write code that solves a randomly-selected problem.",
+        "icon": "https://i.imgur.com/bvZwgdr.png",
+        "lang": "js",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/codearena"
+      },
+      "discordshell": {
+        "name": "DiscordShell",
+        "desc": "LunaBot, but reimplemented as a non-userbot. Offers various utilities via a POSIX-like command interface.",
+        "lang": "js",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/DiscordShell"
+      },
+      "lunabot": {
+        "name": "LunaBot",
+        "desc": "A Discord userbot that provides various utilities and a POSIX-like command interface.",
+        "lang": "dart",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/LunaBot"
+      },
+      "dartdoc": {
+        "name": "DartDoc",
+        "desc": "A Discord bot for parsing Dart documentation and displaying it on user request. Originally built for the nyx Discord library's community server.",
+        "icon": "https://i.imgur.com/5hBPhvb.png",
+        "lang": "dart",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/DartDoc"
+      },
+      "botah": {
+        "name": "Bot Against Humanity",
+        "desc": "A Discord bot for playing games of Cards Against Humanity.",
+        "icon": "https://i.imgur.com/nD6yNZw.jpeg",
+        "lang": "java",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/BotAH2"
+      },
+      "sonarous": {
+        "name": "Sonarous",
+        "desc": "A Discord bot for downloading and playing music. It's not very good at it.",
+        "icon": "https://i.imgur.com/0DuOVvR.png",
+        "lang": "java",
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/Sonarous"
+      },
+      "tiabot": {
+        "name": "TiaBot",
+        "desc": "A general-purpose Discord bot.",
+        "lang": "java",
+        "license": "gpl2",
+        "source": "https://github.com/phantamanta44/TiaBot2"
       }
     }
   },
@@ -321,36 +493,40 @@
     "projects": {
       "thoth": {
         "name": "Thoth",
-        "desc": "Android file sync tool.",
+        "desc": "A tool for synchronizing files with an Android device over ADB.",
         "lang": "kotlin",
         "license": "json",
         "source": "https://github.com/phantamanta44/thoth"
       },
-      "sonarous": {
-        "name": "Sonarous",
-        "desc": "Rudimentary Discord music bot.",
-        "icon": "https://i.imgur.com/0DuOVvR.png",
-        "lang": "java",
-        "license": "gpl2",
-        "source": "https://github.com/phantamanta44/Sonarous"
+      "jstimeline": {
+        "name": "JS Timeline",
+        "desc": "A timeline web app built for an AP European History project.",
+        "lang": ["html", "css", "js"],
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/jstimeline"
+      },
+      "systemsolver": {
+        "name": "System Solver",
+        "desc": "A program for solving systems of linear equations using Gaussian elimination.",
+        "lang": "groovy",
+        "license": "mit",
+        "source": "https://github.com/phantamanta44/systemsolver"
+      },
+      "cellularpicnic": {
+        "name": "Cellular Picnic",
+        "desc": "Langton's ant, implemented and visualized in the browser with Javascript.",
+        "lang": ["html", "js"],
+        "license": "mit",
+        "link": "http://phantamanta44.github.io/CellularPicnic/",
+        "source": "https://github.com/phantamanta44/CellularPicnic"
       },
       "syne": {
         "name": "Syne",
-        "desc": "Experimental audio waveform animation using web audio.",
-        "lang": [
-          "html",
-          "js"
-        ],
+        "desc": "An audio waveform animation that uses the web audio API.",
+        "lang": ["html", "js"],
         "license": "gpl2",
-        "link": "http://phanta.xyz/Syne",
+        "link": "http://phantamanta44.github.io/Syne/?circle=true",
         "source": "https://github.com/phantamanta44/Syne"
-      },
-      "pysyne": {
-        "name": "PySyne",
-        "desc": "Generates waveform animations for audio clips.",
-        "lang": "python",
-        "license": "mit",
-        "source": "https://github.com/phantamanta44/PySyne"
       }
     }
   }

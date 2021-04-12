@@ -4,5 +4,9 @@
   "js": "/static/img/lang/javascript.png",
   "python": "/static/img/lang/python.png",
   "html": "/static/img/lang/html.png",
-  "css": "/static/img/lang/css.png"
+  "css": "/static/img/lang/css.png",
+  "rust": "/static/img/lang/rust.png",
+  "cpp": "/static/img/lang/cpp.png",
+  "groovy": "/static/img/lang/groovy.png",
+  "dart": "/static/img/lang/dart.png"
 }
