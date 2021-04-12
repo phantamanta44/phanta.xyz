@@ -14,8 +14,10 @@ header, body.mobile header, #center-box, footer {
     width: 100%; height: 100%;
     position: absolute;
     top: 0; left: 0;
-    background: url('/static/img/logo_bg.png') center;
+    background: url('/static/img/bg.jpg') center;
     background-size: cover;
+    box-shadow: inset 0 24vh 24vh -24vh black, inset 0 -24vh 24vh -24vh black;
+    filter: blur(0.2px);
     z-index: -4;
 }
 
