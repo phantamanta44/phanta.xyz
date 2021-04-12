@@ -151,6 +151,13 @@
         "link": "http://lib7.phanta.xyz",
         "source": "https://github.com/rfassoc/libseven"
       },
+      "dashcord": {
+        "name": "DashCord",
+        "desc": "An online dashboard service for Discord bots, built using Floof. Never completed.",
+        "lang": ["html", "css", "js"],
+        "license": "mit",
+        "source": "https://github.com/dashcord/dashcord"
+      },
       "floof": {
         "name": "Floof",
         "desc": "Small web application framework for Node.js.",
@@ -159,13 +166,6 @@
         "license": "mit",
         "link": "https://www.npmjs.com/package/floof",
         "source": "https://github.com/floofjs"
-      },
-      "andesitejs": {
-        "name": "Andesite.js",
-        "desc": "A preliminary attempt at building a clientside MVVM framework. Never completed.",
-        "lang": "js",
-        "license": "mit",
-        "source": "https://github.com/phantamanta44/andesite.js"
       },
       "site167": {
         "name": "iowacityrobotics.org",
