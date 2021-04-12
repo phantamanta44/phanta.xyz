@@ -163,6 +163,9 @@ window.addEventListener('load', () => {
           updateRupeeCount(rupee.value);
         };
         elemRupee.style.left = (left = !left) ? `${Math.random() * 8}%` : `${Math.random() * 8 + 92}%`;
+        if (!left) {
+          elemRupee.style.transform = 'translateX(-100%)';
+        }
         elemRupee.style.top = `${Math.random() * remainingHeight + headerOffset}%`;
         elemWrapper.appendChild(elemRupee);
       })(selectRupee());
