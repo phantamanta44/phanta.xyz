@@ -127,15 +127,19 @@ window.addEventListener('load', () => {
       rupeeCount = Math.min(rupeeCount + offset, 999);
       window.sessionStorage.setItem('rupees', rupeeCount.toString());
       if (rupeeUpdateTask === null) {
-        window.setTimeout(function rupeeUpdateTick() {
+        function rupeeUpdateTick() {
           setDisplayedRupeeCount(++displayedRupeeCount);
           if (displayedRupeeCount !== rupeeCount) {
-            sndRupeeChangeProgress.playRefreshing();
             rupeeUpdateTask = setTimeout(rupeeUpdateTick, 36);
           } else {
+            sndRupeeChangeProgress.pause();
             sndRupeeChangeDone.playRefreshing();
             rupeeUpdateTask = null;
           }
+        }
+        rupeeUpdateTask = window.setTimeout(function() {
+          sndRupeeChangeProgress.playRefreshing();
+          rupeeUpdateTick();
         }, 250);
       }
     }
