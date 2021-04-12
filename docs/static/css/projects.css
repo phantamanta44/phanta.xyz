@@ -3,7 +3,7 @@ main {
 }
 
 .proj-category {
-    margin-top: 28px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -11,7 +11,7 @@ main {
     width: 63%;
     height: 0;
     position: absolute;
-    top: -14px;
+    top: -20px;
     left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.48);
     content: '';
@@ -91,6 +91,7 @@ main {
 
 .proj-name {
     max-width: 100%;
+    margin-bottom: -2px;
     display: inline-block;
     font-size: 16pt;
     font-weight: bold;
